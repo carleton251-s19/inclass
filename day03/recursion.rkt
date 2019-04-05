@@ -33,3 +33,12 @@
 
 (test (list-of-numbers? '(3 6 2 1)) #t)
 (test (list-of-numbers? '(3 6 a 1)) #f)
+
+(define nth
+  (lambda (lst n)
+    (if (equal? n 0)
+        (car lst)
+        (nth (cdr lst) (- n 1)))))
+
+(test (nth '(3 6 2 1) 1) 6)
+(test (nth '(3 6 2 1) 3) 1)
