@@ -42,3 +42,18 @@
 
 (test (nth '(3 6 2 1) 1) 6)
 (test (nth '(3 6 2 1) 3) 1)
+
+(define remove-first
+  (lambda (s lst)
+    (cond ((null? lst) '())
+          ((equal? s (car lst)) (cdr lst))
+          (else (cons (car lst)
+                      (remove-first s (cdr lst)))))))
+
+(test (remove-first 'a '(a b c)) '(b c))
+(test (remove-first 'd '(a b c)) '(a b c))
+(test (remove-first 'a '(d a b a c)) '(d b a c))
+;; remove-all
+;; (remove-all 'a '(a b c a d e a)) ---> '(b c d e)
+
+;; (subst 'b 'a '(w b c b d e))  -->  '(w a c a d e)
