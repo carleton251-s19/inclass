@@ -24,3 +24,12 @@
 (test (list-length '(a b c d e)) 5)
 (test (list-length '()) 0)
 
+(define list-of-numbers?
+  (lambda (lst)
+    (if (null? lst)
+        #t
+        (and (number? (car lst))
+             (list-of-numbers? (cdr lst))))))
+
+(test (list-of-numbers? '(3 6 2 1)) #t)
+(test (list-of-numbers? '(3 6 a 1)) #f)
