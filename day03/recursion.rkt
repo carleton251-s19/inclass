@@ -12,3 +12,15 @@
 
 (test (fact 3) 6)
 (test (fact 5) 120)
+
+(define list-length
+  (lambda (lst)
+    (if (null? lst)
+        0
+        (+ 1 (list-length (cdr lst))))))
+    
+
+(test (list-length '(a b c)) 3)
+(test (list-length '(a b c d e)) 5)
+(test (list-length '()) 0)
+
