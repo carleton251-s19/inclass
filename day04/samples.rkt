@@ -35,3 +35,12 @@
 
 (subsets '(1 2 3))
 
+(define subsets-faster
+  (lambda (lst)
+    (if (null? lst)
+        '(())
+        (append
+         (cons-each (car lst) (subsets-faster (cdr lst)))
+         (subsets-faster (cdr lst))))))
+
+(subsets-faster '(1 2 3))
