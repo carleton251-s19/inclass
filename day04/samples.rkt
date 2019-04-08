@@ -61,3 +61,8 @@
   (lambda (a)
     (lambda (b)
       (* a b))))
+
+(define thing (cmult 3))
+(thing 5)
+
+((cmult 6) 3)
