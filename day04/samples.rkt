@@ -25,6 +25,13 @@
               '( (1 a b) (1 c) (1) (1 d e) ))
 (cons-each 1 '( (a b) (c) () (d e)))
 
-;(define subsets
-;  (lambda (lst)
-;    ........))
+(define subsets
+  (lambda (lst)
+    (if (null? lst)
+        '(())
+        (append
+         (cons-each (car lst) (subsets (cdr lst)))
+         (subsets (cdr lst))))))
+
+(subsets '(1 2 3))
+
