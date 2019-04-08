@@ -33,14 +33,31 @@
          (cons-each (car lst) (subsets (cdr lst)))
          (subsets (cdr lst))))))
 
-(subsets '(1 2 3))
+;(subsets '(1 2 3))
 
 (define subsets-faster
   (lambda (lst)
     (if (null? lst)
         '(())
-        (append
-         (cons-each (car lst) (subsets-faster (cdr lst)))
-         (subsets-faster (cdr lst))))))
+        (let ((other-subs (subsets-faster (cdr lst))))
+          (append
+           (cons-each (car lst) other-subs)
+           other-subs)))))
 
 (subsets-faster '(1 2 3))
+
+
+
+; Currying examples
+
+; Non-curried function. Just a normal function
+(define mult
+  (lambda (a b)
+    (* a b)))
+(mult 3 5)
+
+; Curried version
+(define cmult
+  (lambda (a)
+    (lambda (b)
+      (* a b))))
