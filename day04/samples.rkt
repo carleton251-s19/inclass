@@ -15,8 +15,16 @@
 
 (define cons-each
   (lambda (s lst)
-    .....))
+    (if (null? lst)
+        '()
+        (cons (cons s (car lst))
+               (cons-each s (cdr lst))))))
 
-(define subsets
-  (lambda (lst)
-    ........))
+(require rackunit)
+(check-equal? (cons-each 1 '( (a b) (c) () (d e)))
+              '( (1 a b) (1 c) (1) (1 d e) ))
+(cons-each 1 '( (a b) (c) () (d e)))
+
+;(define subsets
+;  (lambda (lst)
+;    ........))
