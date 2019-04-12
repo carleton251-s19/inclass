@@ -7,11 +7,11 @@ struct Wrapper {
 };
 
 int main() {
-   struct Wrapper *w1 = malloc(sizeof(struct Wrapper));
+   struct Wrapper * w1 = malloc(sizeof(struct Wrapper));
    struct Wrapper *w2 = malloc(sizeof(struct Wrapper));
    (*w1).value = 1;
    w2 = w1;
    printf("%i %i\n",(*w1).value,(*w2).value);
    (*w2).value = 2;
-   printf("%i %i\n",(*w1).value,(*w2).value);
+   printf("%i %i %p\n",(*w1).value,(*w2).value, w1);
 }
