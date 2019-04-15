@@ -23,6 +23,7 @@ int main() {
     *z = 8;
     printf("z = %i\n",*z);
     double b = fun2(z);
+    double c = fun2(x);
     printf("z = %i\n",*z);
     printf("b = %g\n",b);
 
