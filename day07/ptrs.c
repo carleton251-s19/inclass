@@ -6,7 +6,7 @@ int main() {
     //int *b;   // read it as int* b;
     //b = malloc(sizeof(int));
     int *b = malloc(sizeof(int));
-    *b = 9
+    *b = 9;
     printf("%i\n", a);
     printf("%i\n", b);
 }
