@@ -7,4 +7,5 @@ int main() {
     int *b = malloc(sizeof(int));
     *b = 9
     printf("%i\n", a);
+    printf("%i\n", b);
 }
