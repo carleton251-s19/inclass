@@ -26,5 +26,5 @@ int main() {
     printf("z = %i\n",*z);
     printf("b = %g\n",b);
 
-    //free(z);
+    free(z);
 }
