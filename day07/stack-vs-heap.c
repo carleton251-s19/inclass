@@ -25,4 +25,6 @@ int main() {
     double b = fun2(z);
     printf("z = %i\n",*z);
     printf("b = %g\n",b);
+
+    free(z);
 }
