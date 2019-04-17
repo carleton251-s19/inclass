@@ -3,4 +3,4 @@ struct LinkedList {
     struct LinkedList *next;
 };
 
-typedef struct LinkedList schiller;
+typedef struct LinkedList       LinkedList;
