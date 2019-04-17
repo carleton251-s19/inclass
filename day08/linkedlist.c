@@ -12,6 +12,7 @@ LinkedList *insertFrontLL(LinkedList *list,
     LinkedList *cell = malloc(sizeof(LinkedList));
     //(*cell).value = item;
     cell -> value = item;
-    (*cell).next = list;
+    //(*cell).next = list;
+    cell -> next = list;
     return cell;
 }
