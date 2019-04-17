@@ -2,6 +2,6 @@
 #include "linkedlist.c"
 
 int main() {
-    LinkedList *head = NULL;
+    schiller *head = NULL;
     
 }
