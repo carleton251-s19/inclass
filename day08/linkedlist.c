@@ -2,7 +2,7 @@
 typedef struct LinkedList       LinkedList;
 struct LinkedList {
     int value;
-    struct LinkedList *next;
+    LinkedList *next;
 };
 
 
