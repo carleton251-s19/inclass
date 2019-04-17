@@ -1,7 +1,7 @@
 #include <stdlib.h>
 typedef struct LinkedList       LinkedList;
 
-struct LinkedList {
+LinkedList {
     int value;
     LinkedList *next;
 };
