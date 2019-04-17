@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include "linkedlist.c"
+#include "linkedlist.c"
 
 int main() {
     LinkedList *head = NULL;
