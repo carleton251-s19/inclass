@@ -6,7 +6,7 @@ int main() {
     LinkedList *newHead =
         insertFrontLL(head, 12);
     newHead =
-        insertFrontLL(head, 15);
+        insertFrontLL(newHead, 15);
     newHead =
-        insertFrontLL(head, 3);
+        insertFrontLL(newHead, 3);
 }
