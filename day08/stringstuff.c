@@ -4,7 +4,7 @@
 char *makeArrayOfSize10() {
     // how do I know it is 10 long?
     // I don't. I'm out of time. Fix me.
-    char *newWord = malloc(10*sizeof(int));
+    char *newWord = malloc(10*sizeof(char));
     newWord[0] = 'e';
     return newWord;
 }
