@@ -13,4 +13,6 @@ LinkedList *insertFrontLL(LinkedList *list,
 
 void cleanupLL(LinkedList *list) {
     // do the stuff
+    // loop over everything there and free it,
+    // correctly
 }
