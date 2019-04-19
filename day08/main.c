@@ -10,4 +10,6 @@ int main() {
         insertFrontLL(newHead, 15);
     newHead =
         insertFrontLL(newHead, 3);
+
+    cleanupLL(newHead);
 }
