@@ -9,6 +9,6 @@ int main() {
 
     printf("%s\n",word);
 
-    printf("%s\n", "cat");
+    printf("%s\n", "dog");
     
 }
