@@ -14,6 +14,6 @@ int main() {
 
     char *fido = "dog";
     printf("%s\n", fido);
-    free(fido);
+    fido[0] = 'h';
     
 }
