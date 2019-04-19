@@ -10,3 +10,7 @@ LinkedList *insertFrontLL(LinkedList *list,
     cell -> next = list;
     return cell;
 }
+
+void cleanupLL(LinkedList *list) {
+    // do the stuff
+}
