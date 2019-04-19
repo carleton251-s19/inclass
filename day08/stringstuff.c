@@ -10,5 +10,7 @@ int main() {
     printf("%s\n",word);
 
     printf("%s\n", "dog");
+
+    char *fido = "dog";
     
 }
