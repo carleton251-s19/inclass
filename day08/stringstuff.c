@@ -8,4 +8,7 @@ int main() {
     word[3] = '\0';
 
     printf("%s\n",word);
+
+    printf("%s\n", "cat");
+    
 }
