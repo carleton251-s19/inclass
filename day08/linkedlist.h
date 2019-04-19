@@ -14,4 +14,5 @@ typedef struct LinkedList LinkedList;
 LinkedList *insertFrontLL(LinkedList *list,
                           int item);
 
+void cleanupLL(LinkedList *list);
 #endif
