@@ -12,5 +12,6 @@ int main() {
     printf("%s\n", "dog");
 
     char *fido = "dog";
+    printf("%s\n", fido);
     
 }
