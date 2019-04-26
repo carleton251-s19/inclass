@@ -1,2 +1,2 @@
-print(3)
+print(12)
 def doit():
