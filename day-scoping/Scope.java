@@ -6,6 +6,7 @@ public class Scope {
         //System.out.println("michael says " + x);
         int x = 6;
         System.out.println("michael says " + x);
+        int x = 12;
         fun2();
     }
 
