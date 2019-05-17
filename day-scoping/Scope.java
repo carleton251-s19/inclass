@@ -4,7 +4,8 @@ public class Scope {
 
     public static void fun1() {
         System.out.println("michael says " + x);
-        int x = 6;
+        //int x = 6;
+        int x = x - 2;
         System.out.println("michael says " + x);
         fun2();
     }
