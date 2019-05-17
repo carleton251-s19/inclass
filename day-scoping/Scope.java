@@ -3,7 +3,7 @@ public class Scope {
     public static int x = 8;
 
     public static void fun1() {
-        System.out.println(x);
+        System.out.println("michael says " + x);
         int x = 6;
         fun2();
     }
