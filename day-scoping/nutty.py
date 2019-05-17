@@ -1,7 +1,7 @@
 x = 8
 
 def fun1():
-    x = 6
+    x = x - 2
 
 fun1()
 print(x)
