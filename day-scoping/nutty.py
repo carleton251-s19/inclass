@@ -5,5 +5,10 @@ def fun1():
     print(x)
     x = 6
 
-fun1()
+def fun2(x):
+    print(x)
+    x = 6
+
+fun2(12)
+#fun1()
 print(x)
