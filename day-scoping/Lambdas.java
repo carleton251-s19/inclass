@@ -26,5 +26,9 @@ public class Lambdas {
                 return x - y;
             }
         }, 5, 3);
+
+        // Java lambda expressions, much better
+        Function multiply = (x,y) -> x*y;
+        evaluate(multiply, 5, 3);
     }
 }
