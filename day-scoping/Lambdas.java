@@ -5,7 +5,7 @@ interface Function {
 public class Lambdas {
 
     public static void evaluate(
-        Adam fobj, int x, int y) {
+        Function fobj, int x, int y) {
 
         System.out.println(fobj.f(x,y));
     }
