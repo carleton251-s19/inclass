@@ -11,6 +11,7 @@ public class Lambdas {
     }
     
     public static void main(String[] args) {
+        // Full inheritance glory
         Function add = new Function() {
             public int f(int x, int y) {
                 return x + y;
@@ -18,5 +19,12 @@ public class Lambdas {
         };
         
         evaluate(add, 5, 3);
+
+        // Anonymous inner classes
+        evaluate(new Function() {
+            public int f(int x, int y) {
+                return x - y;
+            }
+        }, 5, 3);
     }
 }
