@@ -1,15 +1,22 @@
+interface Function {
+    public int f(int x, int y);
+}
+
 public class Lambdas {
 
     public static void evaluate(
-        Function f, int x, int y) {
+        Function fobj, int x, int y) {
 
-        System.out.println(f(x,y));
+        System.out.println(fobj.f(x,y));
     }
     
     public static void main(String[] args) {
-        Function add = ...
-            add two numbers;
-
+        Function add = new Function() {
+            public int f(int x, int y) {
+                return x + y;
+            }
+        };
+        
         evaluate(add, 5, 3);
     }
 }
