@@ -1,4 +1,4 @@
-interface Adam {
+interface Function {
     public int f(int x, int y);
 }
 
@@ -28,7 +28,7 @@ public class Lambdas {
         }, 5, 3);
 
         // Java lambda expressions, much better
-        Adam multiply = (x,y) -> x*y;
+        Function multiply = (x,y) -> x*y;
         evaluate(multiply, 5, 3);
     }
 }
