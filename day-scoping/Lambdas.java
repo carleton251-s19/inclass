@@ -1,18 +1,18 @@
-interface Function {
+interface Adam {
     public int f(int x, int y);
 }
 
 public class Lambdas {
 
     public static void evaluate(
-        Function fobj, int x, int y) {
+        Adam fobj, int x, int y) {
 
         System.out.println(fobj.f(x,y));
     }
     
     public static void main(String[] args) {
         // Full inheritance glory
-        Function add = new Function() {
+        Adam add = new Adam() {
             public int f(int x, int y) {
                 return x + y;
             }
@@ -21,14 +21,14 @@ public class Lambdas {
         evaluate(add, 5, 3);
 
         // Anonymous inner classes
-        evaluate(new Function() {
+        evaluate(new Adam() {
             public int f(int x, int y) {
                 return x - y;
             }
         }, 5, 3);
 
         // Java lambda expressions, much better
-        Function multiply = (x,y) -> x*y;
+        Adam multiply = (x,y) -> x*y;
         evaluate(multiply, 5, 3);
     }
 }
