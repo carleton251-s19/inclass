@@ -9,7 +9,6 @@ void foo(int *x) {
 
 int main() {
    int a = 5;
-   printf("%i\n",a);
    foo(&a);
    printf("%i\n",a);
 }
